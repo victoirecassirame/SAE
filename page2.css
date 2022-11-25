@@ -1,0 +1,60 @@
+      #circleout {
+        background-color: blue;
+        width: 30em;
+        height: 30em;
+        position: relative;
+      }
+
+      #circlein {
+        background-color: red;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: 10%;
+        border: 1rem solid black;
+        border-radius: 2000;
+      }
+
+      .circleitem {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        margin: 1em;
+        transform-origin: center;
+        pointer-events: none;
+      }
+
+      .circleitem > span {
+        background-color: green;
+        border: 2px solid black;
+        width: 5em;
+        height: 5em;
+        border-radius: 2000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        transform-origin: center;
+        pointer-events: all;
+        font-size: 1em;
+        color: yellow;
+      }
+      .circleitem > span:hover {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: green;
+        background-color: yellow;
+      }
+
+      #rotate1 {
+        transform: rotate(60deg);
+      }
+      #rotate1 > span {
+        transform: rotate(-60deg);
+      }
