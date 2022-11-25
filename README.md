@@ -8,7 +8,12 @@
  sudo apt install git`
 ```
 
-### 
+### Télécharger le fichier
+
+Se placer dans un nouveau dossier et entrer la commande
+```bash
+https://github.com/victoirecassirame/SAE.git
+```
 
 ### Installer [asdf](https://github.com/asdf-vm/asdf) 
 
@@ -19,6 +24,8 @@ echo '
 . $HOME/.asdf/completions/asdf.bash
 ' >>~/.bashrc
 ```
+
+**ATTENTION**: Il est nécessaire de fermer le terminal en cours et d'en ouvrir un nouveau pour continuer
 
 ### Installer le plugin node
 
@@ -34,3 +41,16 @@ asdf install nodejs latest:16
 asdf global nodejs latest:16
 ```
 
+### Installer les dépendances
+
+```bash
+npm install
+```
+
+### Lancer le projet
+
+```bash
+npx run dev
+```
+
+Le site est à présent disponible sur [http://localhost:1234/page2.html](http://localhost:1234/page2.html)
