@@ -3,9 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (width <= 30em) {
-}
-
 
 
 @media (width <= 30em) {
@@ -15,7 +12,7 @@
 }
 
 body{
-    text-align: justify;
+    text-align: center;
     background-color:Beige;
     color:DimGray;
 }
@@ -47,8 +44,14 @@ figure{
     padding:20px;
     display:inline-block;
     float:right;
-    margin:10px;
-    
+    margin:10px;    
+}
+@media(max-width:925px){
+	figure{
+	display:flex-box;
+	float:none;
+  
+	}
 }
 table{
     background-color:PeachPuff;
@@ -59,4 +62,39 @@ table{
 }
 table td{
     border:1px solid;
+}
+form input{
+	background-color:LightBlue;
+	
+}
+/*css du menu*/
+.menu {
+	display:flex;
+	height:50px;
+}
+.item{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-grow:1;
+	
+}
+a{
+	text-decoration:none;
+	color:Teal;
+}
+.item1 {
+	
+	background:LavenderBlush;
+}
+.item2{
+	background:Lavender;
+}
+.item3 {
+	background:LightCyan;
+}
+@media(max-width:800px){
+	.menu{
+		flex-direction:column;
+	}
 }
