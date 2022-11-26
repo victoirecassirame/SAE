@@ -12,9 +12,11 @@
 
 Se placer dans un nouveau dossier et entrer la commande
 ```bash
-https://github.com/victoirecassirame/SAE.git
+git clone https://github.com/victoirecassirame/SAE.git
 ```
 puis `cd SAE`   
+
+puis `cd SAE`
 
 ### Installer [asdf](https://github.com/asdf-vm/asdf) 
 

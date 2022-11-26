@@ -8,50 +8,7 @@
   }
 }
 
-header{
-  display: flex;
-  flex-direction: row;
-  position: fixed;
-  background-color: yellow;
-  align-items: center;
-  width: 100%;
-  z-index: 1000;
-}
 
-#logoHeader{
-  width: 20%;
-  flex: 1;
-  background-color: orange;
-  margin: 10px;
-}
-
-h1{
-  flex: 2;
-  text-align: center;
-}
-
-nav{
-  overflow: hidden;
-  background-color: green;
-  width: 100%;
-  float: right;
-  border: solid;
-  background-color: beige;
-  position : fixed;
-}
-
-nav a{
-  border: solid;
-  border-width: thin;
-  border-radius: 500px;
-  text-decoration: none;
-  color: black;
-  padding: 5px;
-}
-
-nav a:hover{
-  color : blue;
-}
 
 @media (width <= 30em) {
   nav a {
@@ -102,57 +59,6 @@ button{
   height: 250px;
 }
 
-.contenantRond{
-  position: relative;
-  background-color: hotpink;
-  width : 550px;
-  height : 550px;
-
-
-}
-
-#rond{
-  border: solid;
-  border-radius: 10000px;
-  border-width: 20px;
-  position: absolute;
-  left: 0; right: 0; top: 0; bottom: 0;
-  border-color: black;
-  margin: 20px;
-  background-color: green;
-}
-
-.petitRondContenant{
-  position: absolute;
-  left: 0; right: 0; top: 0; bottom: 0;
-  text-align: center;
-}
-.petitRondB{
-  display: inline;
-  border: solid;
-  border-width: 10px;
-  border-radius: 500px;
-  border-color: black;
-  background-color: white;
-  width: 60px;
-  height: 60px;
-  text-align: center;
-  line-height: 50px;
-}
-
-.petitRondNonante{
-  border: solid;
-  border-width: 10px;
-  border-radius: 500px;
-  width: 100px;
-  height: 100px;
-  border-color: black;
-  background-color: pink;
-  position: absolute;
-  right: 5px;
-  text-align: center;
-  line-height: 50px;
-}
 
 .icone{
   background-color: skyblue;
@@ -189,14 +95,12 @@ iframe{
 }
 
 #circleout {
-        background-color: blue;
         width: 30em;
         height: 30em;
         position: relative;
       }
 
 #circlein {
-        background-color: red;
         position: absolute;
         left: 0;
         right: 0;
@@ -220,8 +124,8 @@ iframe{
         pointer-events: none;
 }
 
-.circleitem > span {
-        background-color: green;
+.circleitem > a {
+        background-color: lightcoral;
         border: 2px solid black;
         width: 5em;
         height: 5em;
@@ -233,14 +137,17 @@ iframe{
         transform-origin: center;
         pointer-events: all;
         font-size: 1em;
-        color: yellow;
+        color: black;
+        cursor : pointer;
+
+        
 }
 
-.circleitem > span:hover {
-        font-size: 1.5em;
+.circleitem > a:hover {
+        font-size: 1.2em;
         font-weight: bold;
-        color: green;
-        background-color: yellow;
+        color: black;
+        background-color: coral;
 }
 
 #rotate1 {
