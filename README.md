@@ -50,7 +50,7 @@ npm install
 ### Lancer le projet
 
 ```bash
-npx run dev
+npm run dev
 ```
 
 Le site est à présent disponible sur [http://localhost:1234/page2.html](http://localhost:1234/page2.html)
