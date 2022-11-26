@@ -14,7 +14,7 @@ Se placer dans un nouveau dossier et entrer la commande
 ```bash
 https://github.com/victoirecassirame/SAE.git
 ```
-puis 
+puis `cd SAE`   
 
 ### Installer [asdf](https://github.com/asdf-vm/asdf) 
 
