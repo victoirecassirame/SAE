@@ -4,175 +4,96 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="stylePage2.css">
+	<script src="./page2.js"></script>
 	<title>Shopping - Parcours</title>
+	<script>
+		function init() {
+			displayShops()
+		}
+	</script>
 </head>
-<body>
-	<header>
+<body onload="init()">
+	<header class="h-14 flex flex-row p-3 fixed bg-white z-10 w-full border-b-2 border-gray-400"> 
 		<!--<a href="page2.html" ><img src="images/barcode-solid.svg" alt="logo" id="logoHeader"></a>-->
-		
-		<h1>Shopping Montreuil</h1>
-			<!-- <nav>
-				<ul>
-					<li id="deroulant">Menu
-						<ul >
-							<li><a href="page1.html">TitrePage1</a></li>
-							<li><a href="page2.html">Shopping Montreuil</a></li>
-							<li><a href="page3.html">TitrePage3</a></li>
-						</ul>
-					</li>
+		<div>LOGO</div>
+		<div class="flex-1 block sm:hidden"></div>
+		<div class="flex-1 hidden sm:block text-center">Shopping Montreuil</div>
+		<nav>
+			<ul class="flex flex-row">
+				<li ><a class="text-gray-500 hover:text-black" href="page2.html">TitrePage1</a></li>
+				<li class="mx-3 text-gray-500 hover:text-black border-b-4 border-b-red-400"><a href="page2.html">Shopping Montreuil</a></li>
+				<li class="text-gray-500 hover:text-black"><a href="page2.html">TitrePage3</a></li>
 			</ul>
-			</nav> -->
-
-			<!--<div class ="menu">
-				<nav>
-					<span> Menu</span>
-
-					<a href="page1.html">Titre page 1</a>
-					<a href="page2.html">Notre Circuit</a>
-					<a href="page3.html">Titre Page 3</a>
-				</nav>
-			</div> -->
-		<!--<nav>
-	        <ul class="menu"> 
-	        	<input type="button" name="Menu">
-				<li><a href="page1.html">Titre page 1</a></li>
-				<li><a href="page2.html">Notre Circuit</a></li>
-				<li><a href="page3.html">Titre Page 3</a></li>
-			</ul>
-		</nav> -->
-		<div id="menu">
-			<nav>
-					<a href="page2.html">Acceuil</a>
-					<a href="page2.html">TitrePage1</a>
-					<a href="page2.html">TitrePage3</a>
-			</nav>
-		</div>
-			
+		</nav>
 	</header>
 
-	<h2>Doing shopping in Montreuil</h2>
-	<div id="divHeader">
-		<div id="intro">
-			<p>Welcome to all students, we hope you're getting used to France! Here is a little page gathering some useful informations about where to go shopping in Montreuil.</p>
-			<p>Firstly, you'll find a little tour we made for you, it includes several types of shops (for school, food, beauty and clothing and so on.</br> Lower, you'll find informations about the shops themselves.</p>
+	<div class="h-14"></div>
+
+	<div class="flex flex-row px-3 pt-3">
+		<div class="flex-1">
+			<h2 class="text-2xl pb-3">Doing shopping in Montreuil</h2>
+			<div class="text-lg">
+				<p>
+					Welcome to all students, we hope you're getting used to France! 
+					Here is a little page gathering some useful informations about 
+					where to go shopping in Montreuil.
+				</p>
+				<p>
+					Firstly, you'll find a little tour we made for you, it includes 
+					several types of shops (for school, food, beauty and clothing 
+					and so on.
+					</br> 
+					Lower, you'll find informations about the shops themselves.
+				</p>
+			</div>
 		</div>
-	<img src="shoppingBag.png" alt="Shopping bag" id="imgShoppingBag">
+		<img class="rounded-full pl-7 hidden sm:block" width="125" src="./shoppingBag.png" alt="Shopping bag" >
+	</div>
+	
+
+	<h2 class="p-3 text-2xl">The Tour</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2">
+	<div class="px-3 text-lg pb-3">
+		Départ : Rue de l'église (à 3 minutes du métro 9 mairie de montreuil)<br/>
+		Fin de l'itinéraire: on se trouve à proximité du métro 9 mairie de montreuil.
+	</div>
+
+	<div class="flex flex-row justify-center items-center">
+	<div id="circleout" class="bg-green-600">
+		
+		<div id="circlein"></div>
+		<div class="circleitem" style="transform: rotate(0deg)">
+		  <a style="transform: rotate(-0deg)" onCLick="return displayShopBulle(0)">Carrefour</a>
+		</div>
+		<div id="rotate1" class="circleitem">
+		  <a style="transform: rotate(-60deg)" onClick="return displayShopBulle(5)">Le Bergerac</a>
+		</div>
+		<div class="circleitem" style="transform: rotate(120deg)">
+		  <a style="transform: rotate(-120deg)" onClick="return displayShopBulle(1)">Nonante</a>
+		</div>
+		<div class="circleitem" style="transform: rotate(180deg)">
+		  <a style="transform: rotate(-180deg)" onClick="return displayShopBulle(2)">StoryBulle</a>
+		</div>
+		<div class="circleitem" style="transform: rotate(240deg)">
+		  <a style="transform: rotate(-240deg)" onClick="return displayShopBulle(3)">Beers And Records</a>
+		</div>
+		<div class="circleitem" style="transform: rotate(300deg)">
+		  <a style="transform: rotate(-300deg)" onClick="return displayShopBulle(4)">Grand Angle</a>
+		</div>
+		</div>
+		<div id="ShopBulle" class="flex justify-center items-center">
+		</div>
+	</div>
+
 </div>
-	<h2>The Tour</h2>
+	
+	<h2 class="p-3 text-2xl">The Shops</h2>
 
-	Départ : Rue de l'église (à 3 minutes du métro 9 mairie de montreuil )
-
-    <div id="circleout">
-      <div id="circlein"></div>
-      <div class="circleitem" style="transform: rotate(0deg)">
-        <span style="transform: rotate(-0deg)">Carrefour</span>
-      </div>
-      <div id="rotate1" class="circleitem">
-        <span>Ikea</span>
-      </div>
-      <div class="circleitem" style="transform: rotate(120deg)">
-        <span style="transform: rotate(-120deg)">Auchan</span>
-      </div>
-      <div class="circleitem" style="transform: rotate(180deg)">
-        <span style="transform: rotate(-180deg)">Casino</span>
-      </div>
-      <div class="circleitem" style="transform: rotate(240deg)">
-        <span style="transform: rotate(-240deg)">La belle ferme</span>
-      </div>
-      <div class="circleitem" style="transform: rotate(300deg)">
-        <span style="transform: rotate(-300deg)">Ikea</span>
-      </div>
-    </div>
- 
-	Fin de l'itinéraire: on se trouve à proximité du métro 9 mairie de montreuil.
-
-	<div class="contenantRond">
-		<div id="rond">	
-		</div>
-		<div class="petitRondContenant" style="transform: rotate(45deg);">
-		<div class="petitRondB" style="transform: rotate(-45deg);">
-			Le bergerac
-		</div>
-	</div>
-	</div>
-
-	<div class="icone">
-		<div>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20996.376460360894!2d2.4142159138238193!3d48.866846948302644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d5b29a02acb%3A0x7b5a6c57f8aa825e!2sStella%20Artois%20Tabac!5e0!3m2!1sfr!2sfr!4v1668274171634!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="tourIFrame"></iframe>
-		</div>
-		Le Bergerac
-	</div>
-	<h2>The Shops</h2>
-
-		<div>
-			<h3>Le Bergerac </h3>
-				<p>(café, brasserie , tabac) </p> 
-				<div class="informations">
-					<div class="informationsEcrites">
-						adresse : 29 Rue de l’église </br>
-						horaires : 
-						site web : /adresse/
-					</div>
-					<! -- Pas sûre que ce soit légal d'utiliser maps-- > 
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20996.376460360894!2d2.4142159138238193!3d48.866846948302644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d5b29a02acb%3A0x7b5a6c57f8aa825e!2sStella%20Artois%20Tabac!5e0!3m2!1sfr!2sfr!4v1668274171634!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-
-			<h3>Nonante</h3> 
-				<p>(épicerie fine)</p> 
-				<div class="informations">
-					<div class="informationsEcrites">
-						adresse : 21 Rue de l’église</br>
-						horaires :
-						site web : /adresse/
-					</div>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.7033103319036!2d2.4431293999999983!3d48.8638677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d5b2e950b31%3A0x8a4ae242cbb95400!2sNonante!5e0!3m2!1sfr!2sfr!4v1668273975504!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-				
-			<h3> Storybulle </h3>
-				<p>(Librairie spécialisée dans la vente de Bande Dessinée, manga)</p>
-				<div class="informations">
-					<div class="informationsEcrites"> 
-					adresse : 21 Rue de l’église</br>
-					horaires :
-					site web : /adresse/
-					</div>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.7031263427493!2d2.44093535129838!3d48.86387120817301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d5b2e950b31%3A0x3ba2c8cc9fab30cb!2sStorybulle!5e0!3m2!1sfr!2sfr!4v1668273996470!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-			
-			<h3> Beers and Records </h3>
-				<p>(Disquaire et marchand de bière artisanale) </p>
-				<div class="informations">
-					<div class="informationsEcrites">
-					adresse : 17 Rue de l’église</br>
-					horaires : 
-					site web : /adresse/
-					</div>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.7025861503553!2d2.440645951298365!3d48.8638815081724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d5ef6d7c0f5%3A0x74563793f9190b!2sBeers%20%26%20Records%20Disquaire%20%2F%20cave%20%C3%A0%20bi%C3%A8res!5e0!3m2!1sfr!2sfr!4v1668274021264!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-			
-			<h3>Centre commercial Grand Angle</h3> 	
-				<p>(centre commercial à air libre) </p>
-				<div class="informations">
-					<div class="informationsEcrites"> 
-						adresse : Rue des Lumières</br>
-						horaires : 
-						site web : /adresse/
-					</div>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.831920909582!2d2.441471600000003!3d48.86141539999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d5b90cfde45%3A0xfb34650aa066b5ac!2sCentre%20Commercial%20Grand%20Angle!5e0!3m2!1sfr!2sfr!4v1668274043778!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-
-			<h3>Carrefour market </h3>
-				<p>(supermarché)</p>
-				<div class="informations">
-					<div class="informationsEcrites"> 	
-						adresse : 5 rue Franklin</br>
-						horaires :
-						site web : /adresse/
-					</div>	
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8198216439564!2d2.439927351298287!3d48.8616461083298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66d6b357710c5%3A0xd022e73f4653e28c!2sCarrefour%20Drive%20Montreuil%20Coeur%20De%20Ville!5e0!3m2!1sfr!2sfr!4v1668274064354!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-				</div>
-		</div>
-
+<!--	
+	<a onclick="displayShops('epicerie'); return false" href="#" >Epiceries</button>
+	<a onclick="displayShops('restaurant'); return false" href="#" >REstaus</button>
+-->
+	<div id="theshops" class="grid grid-cols-1 sm:grid-cols-2"></div>
 
 	<footer>
 		<p>Fiona Borgazzi, Victoire Cassirame, Oumaima El Kahdraoui - TD C - Novembre 2002</p>
