@@ -5,7 +5,7 @@
 ### Installer git
 
  ```bash
- sudo apt install git`
+ sudo apt install git curl build-essential`
 ```
 
 ### Télécharger le fichier
@@ -14,6 +14,7 @@ Se placer dans un nouveau dossier et entrer la commande
 ```bash
 https://github.com/victoirecassirame/SAE.git
 ```
+puis 
 
 ### Installer [asdf](https://github.com/asdf-vm/asdf) 
 
