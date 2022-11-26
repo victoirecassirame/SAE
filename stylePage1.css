@@ -1,0 +1,52 @@
+body{
+    width: 1200px;
+    text-align: justify;
+    background-color:Beige;
+    color:DimGray;
+}
+header{
+    background-color:CadetBlue;
+    width:100%;
+}
+header h1{
+    text-align:center;
+
+}
+main section{
+    background-color:DarkSalmon;
+    width:100%;
+    padding:20px;
+}
+main section article {
+    background-color:MediumAquaMarine;
+    padding:20px;
+    margin:10px;
+    margin:10px;
+    
+}
+main section aside {
+    background-color:MediumPurple;
+    padding:20px;
+    width:95%;
+    margin:10px;
+}
+figure{
+    background-color:PaleGreen;
+    padding:20px;
+    width:30%;
+    display:inline-block;
+    float:right;
+    margin:10px;
+    
+}
+table{
+    background-color:PeachPuff;
+    border: 3px double;
+    width:50%;
+    display:inline-block;
+    margin:10px;
+    border-collapse:collapse;
+}
+table td{
+    border:1px solid;
+}
