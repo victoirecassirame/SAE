@@ -1,46 +1,114 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="stylePage1.css">
-        <title> Titre </title>
-    </head>
-    <body>
-        <header>
-            <p>Étudiant de l’iut de Montreuil ce site est fait pour vous. 
+	<head>
+		<meta charset="UTF-8">
+		<title> Page d'acceuil</title>
+
+		<LINK href="stylePage1.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<a id="haut"></a>
+		<header class="h-14 flex flex-row p-3 fixed bg-white z-10 w-full border-b-2 border-gray-400"> 
+		<!--<a href="page2.html" ><img src="images/barcode-solid.svg" alt="logo" id="logoHeader"></a>-->
+		<div>LOGO</div>
+		<div class="flex-1 block sm:hidden"></div>
+		<div class="flex-1 hidden sm:block text-center">Shopping Montreuil</div>
+		<nav>
+			<ul class="flex flex-row">
+				<li ><a class="text-gray-500 hover:text-black" href="page2.html">TitrePage1</a></li>
+				<li class="mx-3 text-gray-500 hover:text-black border-b-4 border-b-red-400"><a href="page2.html">Shopping Montreuil</a></li>
+				<li class="text-gray-500 hover:text-black"><a href="page2.html">TitrePage3</a></li>
+			</ul>
+		</nav>
+	</header>
+		<div class="h-14"></div>
+
+		<div class="flex flex-row px-3 pt-3">
+		<div class="flex-1">
+			<h1 class="text-2xl pb-3"> Page d'acceuil</h1>
+			<div class="text-lg">
+			<p>Étudiant de l’iut de Montreuil ce site est fait pour vous. 
 Ici vous trouverez un parcours thématique pour faire du shopping à Montreuil. Venez découvrir les secrets des petits commerces de la rue de L’Église ou venez arpenter la rue des Lumières réputée pour son centre commercial en plein air. <br/>
 Vous pourrez aussi retrouver sur ce site notre progression dans la création de ce site ainsi que des textes d’explications sur la protection de données personnelles ou encore des captures d’écran des validations de nos pages selon les standards W3C.
-            </p>
-        </header>
-        <main>
-            <section>
-                <article>
-                	<h3>Etapes de la réalisation du site </h3>
-                    <ul>
-                    	<li>schématisation des pages web </li>
-                    	<li>rédiger le contenu de la première page </li>
-			                <li>codage des 3 pages séparément </li>
-                    </ul>
-                   
-                </article>
-                <aside><table>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
 
-        
-            </table>
+			</p>
+			</div>
+		</div>
+		
+		<main>
+			<section>
+				<article>
+					<h2>Etapes de la conception du site web  </h2>
+					<ul>
+						<li> schématisation des pages web </li>
+						<li> rédiger le contenu de la première page</li>
+						<li> codage des 3 pages séparément </li> 
+						<li> codage de la page CSS (un fichier par page web) </li>
+						<li> codage du navigateur/menu </li>
+						<li> codage de l'entête + pied de page </li>
+					</ul>
 
-                </aside>
-            </section>
-        </main>
+				</article>
+				<aside><table>
+				<h2>Répartition des tâches effectuées</h2>
+				<tr>
+					<td>Victoire Cassirame</td>
+					<td> 
+						<ul>
+							<li>codage de la page 2</li>
+							<li>codage du menu </li>
+							<li> codage de l'entête</li>
+						</ul>
+					</td>
+				
+				</tr>
+				<tr> 
+					<td>Oumaima Elkhadraoui</td>
+					<td>
+						<ul>
+							<li>codage de la page 3</li>
+						</ul>
+					</td>
+				</tr>
+				<tr> 
+					<td>Fiona Borgazzi</td>
+					<td>
+						<ul>
+							<li>codage de la page 1</li>
+							<li> media queries</li>
+						</ul>
+					</td>
+				</tr>
+				<tr> 
+					<td>Yanis Bekkouch</td>
+					<td>
+						<ul>
+							<li>codage des ancres</li>
+							<li>codage du pied de page</li>
+							<li> hebergement du site </li>
+						</ul>
+					</td>
+				</tr>
+		
+				</table>
+				<figure>
+				<figcaption>Listen to how we did this website!</figcaption>
+				<audio
+					controls
+					src="audio.m4a">
+					<a href="audio.m4a">
+					Download audio
+					</a>
+				</audio>
+				</figure>
 
-    </body>
+				</aside>
+			</section>
+			<a href="#haut">haut de page</a>
+		</main>
+		
+	<footer>
+		<p>Fiona Borgazzi, Victoire Cassirame, Oumaima El Kahdraoui - TD C - Novembre 2002</p>
+	</footer>
+	</body>
 </html>
