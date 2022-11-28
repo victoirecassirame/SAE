@@ -12,16 +12,9 @@
 }
 
 body{
-    text-align: center;
+    text-align: justify;
     background-color:Beige;
     color:DimGray;
-}
-header{
-    background-color:CadetBlue;
-}
-header h1{
-    text-align:center;
-
 }
 main section{
     background-color:DarkSalmon;
@@ -48,7 +41,7 @@ figure{
 }
 @media(max-width:925px){
 	figure{
-	display:flex-box;
+	display:inline-block;
 	float:none;
   
 	}
@@ -97,4 +90,25 @@ a{
 	.menu{
 		flex-direction:column;
 	}
+}
+header{
+    background-color:CadetBlue;
+}
+.titre{
+	display:inline-block;
+
+	font-family: sans-serif;
+}
+
+}
+.logo {
+	display:inline-block;
+	background-color:Blue;
+}
+.logo a img{
+	width:100px;
+	display:inline-block;
+	float:left;
+	background-color:Blue;
+	
 }
