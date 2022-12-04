@@ -2,34 +2,33 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title> Page d'acceuil</title>
+		<title> Page d'accueil</title>
 
 		<LINK href="stylePage1.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<a id="haut"></a>
-		<header class="h-14 flex flex-row p-3 fixed bg-white z-10 w-full border-b-2 border-gray-400"> 
-		<!--<a href="page2.html" ><img src="images/barcode-solid.svg" alt="logo" id="logoHeader"></a>-->
-		<div class="logo"><a href="file:///home/etudiants/info/fborgazzi/SAE/SAE2-main/page1.html?#haut" > <img src="shoppingBag.png" alt ="logo "/> </a> <! logo du site qui amène à la page d'accueil>
-		</div>
-		<div class="flex-1 block sm:hidden"></div>
-		<div class="titre"><h1>Shopping Montreuil</h1></div>
-		</header>
-		<nav>
-		<div class="menu">
-			<div class="item item1"><a href="file:///home/etudiants/info/fborgazzi/SAE/SAE2-main/page1.html?#haut">Acceuil</a></div>
-			<div class="item item2"><a href="file:///home/etudiants/info/fborgazzi/SAE/SAE2-main/page2.html">Shopping parcours</a></div>
-			<div class="item item3"><a href="file:///home/etudiants/info/fborgazzi/SAE2-main/page3.html">Page Droits</a></div>
-		</div>
-		</nav>
+		<header id="containerMenu">
+        <div><a href="page1.html"><img src="barcode-solid.svg" alt="Barcode logo"></a></div>
+        <div id="blancTitre"></div>
+        <div id="titrePage">Shopping in Montreuil</div>
+        <nav>
+            <ul>
+                <li><a href="page2.html">Accueil</a></li>
+                <li id="actualPage"><a href="page2.html">The Tour</a></li>
+                <li><a href="page2.html">TitrePage3</a></li>
+            </ul>
+        </nav>
+    </header>
+
 
 		<div class="h-14"></div>
 
 		<div class="flex flex-row px-3 pt-3">
 		<div class="flex-1">
-			<h1 class="text-2xl pb-3"> Page d'acceuil</h1>
+			<h1 class="text-2xl pb-3"> Page d'accueil</h1>
 			<div class="text-lg">
-			<p>Étudiant de l’iut de Montreuil ce site est fait pour vous. 
+			<p>Étudiant de l’IUT de Montreuil ce site est fait pour vous. 
 Ici vous trouverez un parcours thématique pour faire du shopping à Montreuil. Venez découvrir les secrets des petits commerces de la rue de L’Église ou venez arpenter la rue des Lumières réputée pour son centre commercial en plein air. <br/>
 Vous pourrez aussi retrouver sur ce site notre progression dans la création de ce site ainsi que des textes d’explications sur la protection de données personnelles ou encore des captures d’écran des validations de nos pages selon les standards W3C.
 
@@ -40,7 +39,16 @@ Vous pourrez aussi retrouver sur ce site notre progression dans la création de 
 		
 		<main>
 			<section>
+				
 				<article>
+					<h2>Recceuil des besoins</h2>
+<p>Notre groupe s’occupe de la partie Shopping du site pour les étudiants étrangers.
+Nous avons commencé par trier les magasins selon leur type : les magasins essentiels, beauté et soin, mode et accessoires, mobilier et décoration, culturels et enfin des services. Puis nous avons cherché les magasins correspondant dans la ville de Montreuil.</br> 
+Grâce au rendez-vous avec Mme. Clément Comparot, responsable des ressources internationales, nous avons mieux cerné les éléments essentiels de notre projet par rapport aux besoins des étudiants étrangers. 
+Nous avons décidé de créer un circuit avec peu d’étapes, regroupées dans le centre ville de Montreuil puisque la mairie est bien desservie et beaucoup de magasins s’y trouvent.
+Nous nous sommes ensuite rendus directement sur place pour voir par nous-mêmes les magasins et parler avec quelques commerçants. </p>
+			</article>
+			<article>
 					<h2>Etapes de la conception du site web  </h2>
 					<ul>
 						<li> schématisation des pages web </li>
@@ -60,7 +68,7 @@ Vous pourrez aussi retrouver sur ce site notre progression dans la création de 
 						<ul>
 							<li>codage de la page 2</li>
 							<li>codage du menu </li>
-							<li> codage de l'entête</li>
+							<li> codage du haut de page </li>
 						</ul>
 					</td>
 				
@@ -78,7 +86,7 @@ Vous pourrez aussi retrouver sur ce site notre progression dans la création de 
 					<td>
 						<ul>
 							<li>codage de la page 1</li>
-							<li> media queries</li>
+							<li>rédaction texte anglais</li>
 						</ul>
 					</td>
 				</tr>
@@ -100,11 +108,10 @@ Vous pourrez aussi retrouver sur ce site notre progression dans la création de 
 			<form action="#haut">
 				<input type="submit" value="haut de page"/>
 			</form>
-			<a href="#haut">haut</a>
 		</main>
 		
 	<footer>
 		<p>Fiona Borgazzi, Victoire Cassirame, Oumaima El Kahdraoui - TD C - Novembre 2022</p>
 	</footer>
 	</body>
-</html>
+</html>>
