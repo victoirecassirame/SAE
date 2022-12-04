@@ -1,39 +1,121 @@
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-
+/*
 @media (width <= 30em) {
   nav a {
     display: block;
   }
 }
-
+*/
+header{
+    position: fixed;
+    height: 55px;
+    z-index: 10;
+    border-bottom: solid;
+    border-color: grey;
+    width: 100%;
+    margin-top: -70px;
+    margin-left: -10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
 body{
     text-align: justify;
-    background-color:Beige;
     color:DimGray;
+    padding: 0px;
+    margin: 10px;
+    margin-top: 70px;
 }
+main{
+	padding: 0px;
+    margin: 0px;
+
+	
+}
+
+#containerMenu{
+    display: flex;
+    flex-direction: row;
+}
+
+#titrePage{
+    display: none;
+}
+
+@media (width >= 640px){
+    #titrePage{
+        display: flex;
+        flex: 1;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+        margin: 5px;
+    }
+}
+
+@media (width>= 640px) {
+    #blancTitre {
+        display: none;
+    }
+}
+
+#blancTitre{
+    flex: 1;
+}
+
+header img{
+    width : 50px;
+}
+nav{
+    padding-right: 15px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+
+nav li{
+    margin: 10px;
+    list-style: none;
+    display: inline;
+    font-size: 15px
+}
+
+nav li: hover{
+    color: black;
+    background-color: lightcoral;
+}
+
+#actualPage{
+    border-bottom: solid;
+    border-color: lightcoral;
+    padding-bottom: 5px;
+}
+
 main section{
-    background-color:DarkSalmon;
+    background-color:WhiteSmoke;
     padding:20px;
 }
 main section article {
-    background-color:MediumAquaMarine;
+    border:solid;
+    border-radius:10px;
     padding:20px;
-    margin:10px;
     margin:10px;
     
 }
 main section aside {
-    background-color:MediumPurple;
+    border:solid;
+    border-radius:10px;
+    border-color: lightcoral;
     padding:20px;
     margin:10px;
 }
 figure{
-    background-color:PaleGreen;
+    border:solid;
+    border-radius:10px;
     padding:20px;
     display:inline-block;
     float:right;
@@ -47,8 +129,9 @@ figure{
 	}
 }
 table{
-    background-color:PeachPuff;
-    border: 3px double;
+    border: 5px double;
+    background-color:white;
+    padding:5px;
     display:inline-block;
     margin:10px;
     border-collapse:collapse;
@@ -57,10 +140,10 @@ table td{
     border:1px solid;
 }
 form input{
-	background-color:LightBlue;
+	background-color:LightGrey;
 	
 }
-/*css du menu*/
+/*css du menu
 .menu {
 	display:flex;
 	height:50px;
@@ -93,7 +176,10 @@ a{
 }
 header{
     background-color:CadetBlue;
-}
+    position:fixed;
+    width:100%;
+    height:100px;
+
 .titre{
 	display:inline-block;
 
@@ -111,4 +197,8 @@ header{
 	float:left;
 	background-color:Blue;
 	
-}
+}*/
+
+
+
+
