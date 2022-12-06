@@ -1,16 +1,11 @@
-
-
-
-
 p {
     font-style : italic;
 }
+
 #text{
-    
     font-size: 20px;
     text-align: justify;
     margin-top: 50px;
-
 }
 
 h1{
@@ -21,9 +16,8 @@ h1{
 h2{
     font-size: 40px;
     font-family: "bebas neue";
-
-
 }
+
 h3{
     font-size: 30px;
     font-family: "bebas neue";
@@ -36,7 +30,6 @@ section {
     background-color: rgba(228, 13, 13, 0.5);
     margin:15px;
 }
-
 
 body {
     padding: 0px;
@@ -54,9 +47,11 @@ main {
 .espace{
     height:50px;
     }
+
 .espace1{
     height:50px;
     }
+
 .menu {
     display:flex;
     height:50px;
@@ -65,36 +60,35 @@ main {
     border-bottom:solid;
     border-color:DimGrey;
     background-color:white;
+   	 } 
 
-   	 }    
 .item{
-    background-color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-grow:1;
-    border: solid;
-   	 border-color: lightcoral;
-   	 padding: 5px;
-   	 border-collapse:collapse;
-   	 margin:10px;
-   	 border-radius:5px;
-   	 font-family:"bebas neue";
-    font-size:1.5em;
-
-    
+	background-color:white;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-grow:1;
+	border: solid;
+	border-color: lightcoral;
+	padding: 5px;
+	border-collapse:collapse;
+	margin:10px;
+	border-radius:5px;
+	font-family:"bebas neue";
+	font-size:1.5em;
 }
 
 .item3{
     margin-right:20px;
 }
+
 a{
     text-decoration:none;
     color:black;
 }
+
 #actualpage{
 	background: lightcoral;
- 
 }
 
 @media(max-width:800px){
@@ -114,35 +108,33 @@ a{
     
 }
 header{
-    background-color:white;
+	background-color:white;
 	width:98%;
 	height:50px;
 	display:flex;
 	position:fixed;
 	z-index: 1;
-    font-family:'Bebas neue';
-	}
+	font-family:'Bebas neue';
+}
 
 
 .titre{
-    display:flex;
-    flex: 1;
-    	text-align: center;
-    	align-items: center;
-    	justify-content: center;
-    font-size:2em;
-
+	display:flex;
+	flex: 1;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	font-size:2em;
 }
 
 .logo {
     display:flex;
-    margin:auto;
-    
+    margin:auto;   
 }
+
 .logo a img{
     width:50px;
-    float:left;
-    
+    float:left;  
 }
 
 footer{
