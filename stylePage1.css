@@ -1,4 +1,5 @@
 
+/*pour ne pas cacher le texte avec le menu*/
 .espace{
 	height:50px;
 	}
@@ -8,10 +9,13 @@
 .menu {
 	display:flex;
 	height:50px;
-	width:100%;
+	width:99%;
 	position:fixed;
-		border-bottom:solid;
-		}	
+	border-bottom:solid;
+	border-color:DimGrey;
+	background-color:white;
+
+}	
 .item{
 	background-color:white;
 	display:flex;
@@ -19,12 +23,13 @@
 	align-items:center;
 	flex-grow:1;
 	border: solid;
-    border-color: lightcoral;
-    padding: 5px;
-    border-collapse:collapse;
-    margin:10px;
-    border-radius:5px;
-    font-style:"bebas neue";
+    	border-color: lightcoral;
+    	padding: 5px;
+    	border-collapse:collapse;
+    	margin:10px;
+    	border-radius:5px;
+    	font-family:"bebas neue";
+	font-size:1.5em;
 
 	
 }
@@ -45,7 +50,7 @@ a{
 @media(max-width:800px){
 	.menu{
 		flex-direction:column;
-		height:120px;
+		height:150px;
 	}
 	.espace1{
   		height:150px;
@@ -54,8 +59,21 @@ a{
 	.item{
 		margin:2px;
 		margin-right:20px;
+		font-size:1.3em;
 	}
 	
+}
+h1{
+	font-family:"bebas neue";
+	font-size:2em;
+}
+ h2{
+	font-family:"bebas neue";
+	font-size:1.7em;
+}
+h3{
+	font-family:"bebas neue";
+	font-size:1.5em;
 }
 header{
 	background-color:white;
@@ -63,18 +81,17 @@ header{
     height:50px;
     display:flex;
     position:fixed;
-    z-index: 1;
-    /*border-top:solid 5px;
-    border-color:lightcoral;*/
-    }
+    z-index: 10;
+	font-family:"Bebas neue";
+   }
 
 .titre{
 	display:flex;
-	font-family:"Andale mono",monospace;
 	flex: 1;
         text-align: center;
         align-items: center;
         justify-content: center;
+	font-size:2em;
 
 }
 .logo {
@@ -89,15 +106,16 @@ header{
 }
 body{
     text-align: justify;
-
-    color:DimGray;
+   
     padding: 0px;
     margin: 10px;
+	margin-top:0px;
 
 }
 main{
 	padding: 0px;
-    margin: 0px;
+    margin: 40px;
+	
 
 	
 }
@@ -105,6 +123,8 @@ main{
 main section{
     background-color:WhiteSmoke;
     padding:20px;
+	border-radius:10px;
+
 }
 main section article {
     border:solid;
@@ -142,13 +162,17 @@ table{
     display:inline-block;
     margin:10px;
     border-collapse:collapse;
+	border-radius:5px;
 }
 table td{
     border:1px solid;
 }
 form input{
 	background-color:LightGrey;
+	border-radius:5px;
 	
 }
+
+
 
 
