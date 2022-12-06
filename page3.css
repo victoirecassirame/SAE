@@ -1,4 +1,4 @@
-p {
+section p {
     font-style : italic;
 }
 
@@ -140,3 +140,18 @@ header{
 footer{
     text-align: center;
 }
+aside{
+	margin:40px;
+	border:solid;
+	border-radius:10px;
+	padding:20px;
+	background-color:whitesmoke;
+
+}
+aside img{
+	width:90%;
+	height:90%;
+	border-color:lightcoral;
+	border:solid;
+}
+	
